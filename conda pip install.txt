@@ -1,0 +1,67 @@
+﻿####first create an environment####
+conda create --name (your_name)
+
+
+####second install python####
+conda create -n (your_name) python=(your custom version)
+
+
+####after install python_fix environment problem for vscode####
+conda install -n (your_name) ipykernel --update-deps --force-reinstall
+
+
+####go to vs-code and run simple code###
+
+
+####after that you install every package easily####
+#numpy
+conda install -c anaconda numpy
+
+#sklearn
+conda install -c anaconda scikit-learn
+
+#tensorflow
+conda install -c conda-forge tensorflow
+
+# dataclasses
+conda install -c conda-forge dataclasses
+
+# mypy      #عیب یابی کد
+conda install -c conda-forge mypy (just for .py files)
+for jupyter in vscode => pip install nb_mypy
+for activate use this way:
+%load_ext nb_mypy : load nb_mypy
+%nb_mypy -v: show version
+%nb_mypy: show the current state
+%nb_mypy On: enable automatic type checking
+%nb_mypy Off: disable automatic type checking
+%nb_mypy DebugOn: enable debug mode
+%nb_mypy DebugOff: disable debug mode
+%nb_mypy mypy-options [OPTIONS]: Provide extra options to mypy (for example --strict)
+
+#django
+conda install -c anaconda django
+
+#roman     # اعداد رومی
+conda install -c conda-forge roman
+
+#pyinstaller     #تبدیل به exe
+conda install -c conda-forge pyinstaller
+
+#sympy   #اعداد اول
+conda install -c anaconda sympy
+
+#emoji
+conda install -c conda-forge emoji
+
+#pint   تبدیل واحدها
+conda install -c conda-forge pint
+
+#mySQL:
+conda install -c anaconda mysql-connector-python
+pip install mysql-connector-python
+
+
+
+
+
